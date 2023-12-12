@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@karelbala - 71231015 - Personal Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">Welcome to My Web Page</header>
+        <aside class="sidebar">
+            <img src="karel.jpeg" width="320px" height="320px" alt="Foto Saya">
+        </aside>
+        <article class="content">
+            <h2>About Me</h2>
+            <h4>Karel Marley Bala Bakior</h4>
+            <ul>
+                <li>
+                    <h3>IG : @karelbala</h3>
+                </li>
+                <li>
+                    <h3>Yogyakarta,Daerah Istimewa Yogyakarta, Indonesia</h3>
+                </li>
+                <li>
+                    <h3><a href="https://instagram.com/karelbala?igshid=NGVhN2U2NjQ0Yg==">Link Ke IG Saya</a></h3>
+                </li>
+            </ul>
+            <h3>Skillset</h3>
+            <ol>
+                <li>Java</li>
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>C++</li>
+                <li>html</li>
+            </ol>
+        </article>
+        <footer class="footer">Thank You for Visiting My Web Page</footer>
+    </div>
+    <script>
+        const bodyElement = document.body;
+        
+        function gantiWarnaRandom() {
+            const warnaList = ["#ff0000", "#4974a5", "#5d782e", "#ffffff"];
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna = document.createElement("button");
+        tombolGantiWarna.textContent = "tombolGantiWarna";
+        tombolGantiWarna.addEventListener("click", gantiWarnaRandom);
+
+        document.body.appendChild(tombolGantiWarna);
+    </script>
+</body>
+</html
